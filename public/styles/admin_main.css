@@ -1,0 +1,107 @@
+html{
+    height: 100%;
+    /*width: 100%;*/
+}
+body{
+    /*direction: rtl;*/
+    height: 100%;
+    /*width: 100%;*/
+    /*background: rgba(180,180,180,1);*/
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+div.containr-fluid{
+    min-height: 95%;
+}
+footer{
+    height: 15%;
+    background: black;
+}
+#map{
+    height: 450px;
+}
+h1,h2{
+    color: white;
+}
+
+.head {
+    width: 100%;
+    background: black;
+    overflow: hidden;;
+}
+/*.navd{
+    position: absolute;
+    height: 100%;
+    background: black;
+}*/
+@media (min-width: 768px){
+
+}
+@media (min-width: 768px){
+    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+        float: right;
+    }
+}
+div.visitors .panel-footer {
+    padding: 10px 15px;
+     background-color: white; 
+     border-top: none; 
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+nav.navbar-static-side{
+    position: absolute;
+   /* width: 260px;*/
+    height: 100%;
+    background: black;
+    z-index: 2001;
+}
+nav.navbar-static-side ul{
+    background: black;
+}
+
+
+nav.navbar-static-side .fadeInRight{
+    background: white;
+}
+/*nav.navbar-static-side ul .nav-second-level{
+    background: black;
+}*/
+/*.nav .metismenu {
+        z-index: 2001;
+        
+        
+}*/
+.main_nav{
+    margin-bottom: 0;
+}
+
+/*section {
+    overflow: hidden;;
+}*/
+@media (min-width: 768px){
+    .navbar-nav > li {
+        float: right;
+    }
+}
+nav li a{
+    color: snow;
+}
+/*
+.visitors{
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    background-color: #f5f5f5;
+}
+.users{
+    width:50%;
+    position: relative;
+    height: 70%;
+    border-radius: 5%;
+    top: 15%;
+    background-color: rgba(0,0,0,.5);#f5f5f5;
+}
+*/

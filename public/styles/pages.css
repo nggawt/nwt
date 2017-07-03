@@ -1,0 +1,324 @@
+
+
+
+/*********************old style pages
+
+div.main_content{
+    margin-top: 120px;
+}
+
+div.main_content .inner_sec{
+    background:rgba(105,110,127,1);
+}
+
+div.main_content .article-header{
+    margin: 15px;
+}
+
+div.main_content .cgg {
+    background-color: #5cb85c;
+}
+
+div.main_content .cdd{
+    
+}
+
+
+
+.contant-body h1{
+    padding: 10px 10px 10px;
+    margin: 0;
+    background-color: #f5f5f5;
+    text-align: center;
+    border-top: 2px solid rgba(74,84,127,1);;
+}
+.contant-aside .sidebar1 h2{
+    font-size: 1.5em;
+}
+.contant-aside .sidebar1 small{
+    color: rgba(180,180,180,1);
+}
+
+.contant-aside .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+    z-index: 2;
+    color: #fff;
+    background-color: rgba(74,84,127,1);
+    border-color: #337ab7;
+}
+
+.contant-aside .sidebar1 p{
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: rgba(105,110,127,1);
+}
+.panel {
+    margin-bottom: 0px;
+}
+
+.panel-default > .panel-heading {
+    color: #333;
+    background-color: #337ab7;
+    border-color: #ddd;
+}
+
+.articles h2{
+    color: rgba(234, 236, 239, 1);
+    margin: 10px 0 0;
+}
+
+.articles .article-footer{
+    overflow: hidden;
+}
+
+.articles .tags{
+    display: inline;
+}
+.articles h5{
+    display: inline;
+    color: black;
+    padding: 0px 10px 0;
+    font-weight: bold;
+}
+.articles .castom-btn-gp{
+    background: rgba(169,176,204,1);
+    margin: 5px 0;
+    
+}
+.articles .article-header a{
+    color: rgba(50,192,240,1);
+    font-weight: bold;
+    cursor: pointer;
+}
+.articles .article-header{  
+    padding-top: 0;
+    padding-bottom: 5px;
+}
+    
+.articles .article-header span{
+    color: rgba(180, 180, 180, 1);
+}
+.articles p{
+    box-sizing: border-box; 
+    line-height: 1.5em;
+    font-size: 1.2em;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+    color: rgba(105,110,127,1);
+}
+
+.panel-default > .panel-heading {
+    background-color: rgba(74,84,127,1);
+}
+
+.articles .panel-footer {
+    background-color: rgba(169,176,204,1);
+    padding: 4px 8px;
+}
+.progress-castom{
+    position: relative;
+    background-color: #fff;
+    border-color: #ddd;
+    border-width: 1px;
+    border-radius: 4px 4px 0 0;
+    overflow: hidden;
+}
+
+.progress-castom h2{
+    
+    color: rgba(210,210,210,1);
+}
+
+section .progress-castom div.progress-head{
+    position: relative;
+    width: 20%;
+    background:rgba(105,110,127,.5);
+    padding: 15px 0;
+    float: right;
+}
+
+section .progress-castom div.progress-body{
+    padding: 15px 0;
+}
+.progress{
+    position: relative;
+    width: 73%;
+    margin-top: 5%;
+    left: 2%;
+}
+.progress-body{
+    
+    position: relative;
+    width: 73%;
+    left: 2%;
+}
+.progress-head h2{
+    text-align: center;
+    margin: 10px 0;
+}
+.progress-head img{
+    position: relative;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+****old style ended here********/
+
+
+/******************The second Test*************
+
+.wrraper{
+    height: 100%;
+}
+
+.main_content{
+    height: 100%;
+}
+
+.container{
+    width: 1300px;
+    height: 100%;
+}
+.inner-contant{
+    height: 100%;
+    position: relative;
+}
+.navbar {
+    border: none;
+}
+.main_sidebar{
+    position: absolute;
+    height: 100%;
+    background: rgba(34,34,34,1);
+}
+
+.main_sidebar .sidebar1 {
+    background: rgba(234, 236, 239,1);
+}
+
+.main_sidebar .sidebar1 hgroup{
+    display: inline;
+}
+
+.main_sidebar .sidebar1 h3{
+    font-size: 1.5em;
+}
+
+.main_sidebar .sidebar1 h2,
+.main_sidebar .sidebar1 h3{
+    padding: 0 10px;
+}
+
+.main_sidebar .sidebar1 h3,
+.main_sidebar .sidebar1 p{
+    margin:0px;
+}
+.main_sidebar .sidebar1 p{
+    padding: 10px;
+    box-sizing: border-box; 
+    font-size: 1.3em;
+    line-height: 1.6em;
+    background: rgba(255,255,255,1);
+}
+.articles .btn-group{
+    padding-right: 10px;
+}
+.articles .btn-warning{
+    
+}
+
+section.main_sec {
+    background: rgba(234, 236, 239,1);;
+}
+
+.articles .article-header{
+    background: rgba(74,84,127,1);
+    color: white
+}
+
+.articles .article-body{
+    
+}
+
+.articles .article-footer{
+    background: rgba(74,84,127,1);
+}
+.articles h2{
+    padding: 10px;
+}
+
+.articles h2 small{
+    font-size: .5em;
+    color: rgba(180,180,180,1);
+}
+
+.articles h2 small span{
+    color: rgba(234, 236, 239,1);
+    font-weight: bold;
+}
+
+.articles p{
+    padding: 10px;
+    box-sizing: border-box; 
+    font-size: 1.3em;
+    line-height: 1.6em;
+}
+*/
+
+/*
+/******************The First Test*************
+.main_content{
+    width: 1170px;
+    height: 100%;
+    margin: auto;
+    
+    padding: 0 15px;
+}
+.inner-contant{
+    height: 100%;
+    width: 100%;
+    margin: 0 -15px;
+}
+.main_sec{
+    width: 70%;
+    float: left;
+}
+
+.contant-body{
+    width: 70%;
+}
+
+.main_sidebar{
+    width: 30%;
+    height: 100%;
+    right: 0px;
+    background: rgba(105,110,127,1);
+    color: rgba(242,242,242,1);
+}
+
+
+.contant-body::after{
+    content: " ";
+    display: table;
+}
+
+.main_sidebar::after{
+    content: " ";
+    display: table;
+    clear: right;
+}
+.main_content::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.contant-aside{
+}
+
+.contant-aside .inner_sidebar,.contant-body .inner_sec{
+    margin: 1em 2em;
+}
+contant-body .inner_sec{
+    width: 50%;
+}*/
