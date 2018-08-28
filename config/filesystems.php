@@ -45,13 +45,17 @@ return [
 
         'local' => [
             'driver' => 'local',
-            'root' => storage_path('app'),
+            // 'root' => storage_path('app'),
+            'root' => resource_path('views/dashboard'),
+
+
         ],
 
         'public' => [
             'driver' => 'local',
-            'root' => storage_path('app/public'),
-            'visibility' => 'public',
+            // 'root' => storage_path('app/public'),
+            // 'root' => resource_path('views/dashboard/pages'),
+            // 'visibility' => 'public',
         ],
 
         's3' => [

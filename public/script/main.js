@@ -40,7 +40,7 @@ function calcOpacity(){
         opacOut:function(){
             var opOut = fadeOut / 10;
             if(fadeOut > 0){
-                fadeOut = fadeOut - 1.1;
+                fadeOut = fadeOut - 1;
             }else{
                 fadeOut = 10;
                 opOut = 0;

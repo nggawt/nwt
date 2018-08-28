@@ -46,15 +46,10 @@
         @include('pages.footer')
         <script src="{{ URL::to('script/jquery-1.11.3.js') }}"></script>
         <script src="{{ URL::to('script/bootstrap.min.js') }}"></script>
+        <!-- <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> -->
         <script src="{{ URL::to('script/main.js') }}"></script>
         <script>
-            $(function(){
-//                alert('hhhh');
-//                var  path = document.getElementById('carrousel');
-//                console.log(path.tagName);
-//                path.style.position = "relative";
-//                path.style.left = 200 + "px";
-            });
+            
         </script>
     </body>
 </html>

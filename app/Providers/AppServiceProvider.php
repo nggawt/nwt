@@ -2,8 +2,6 @@
 
 namespace App\Providers;
 
-//use View;
-
 use Illuminate\Support\Facades\Auth;
 
 use Illuminate\Support\ServiceProvider;
@@ -17,11 +15,22 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-       //dd(auth()->user()->first_name);
-        //View::share('buzzi', Auth::user());
-//         view()->composer('pages/web', function ($view) {
-//            $view->with('buzzi', auth()->user()->first_name);
-//        });
+      
+      
+        view()->composer(
+            ['wellcome','pages.web','dashboard.admin','articles.blog','pages.portfolio','pages.about','pages.contact'],
+            'App\Http\ViewComposers\RedisComposer@compose'
+        );
+
+        view()->composer(
+            ['dashboard.edit-page','dashboard.create-page'],
+            'App\Http\ViewComposers\PagesComposer@compose'
+        );
+        
+        // view()->composer('wellcome', function ($view) {
+
+        //     $view->with('userinc', 'App/Http/Controller/Dashboard@test');
+        // });
     }
 
     /**
@@ -31,6 +40,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        
     }
 }

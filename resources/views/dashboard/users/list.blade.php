@@ -6,17 +6,20 @@
         margin-top: 1em;
     }
     div.costum table thead,tbody{
-        background:rgba(220,220,220,1);
+        background: rgba(240,240,240,1);
         margin-top: 1em;
     }
-    table, th, td {
-     border: 1px solid black;
+    table th {
+        padding: 15px;
+    }
+    table th, table tr {
+     border: 1px solid rgba(212,218,222,1);;
      }
      table th {
          text-align: center;
      }
-     th, td {
-        padding: 15px;
+     td {
+        padding: 10px;
         text-align: center;
     }
  </style>
@@ -36,18 +39,16 @@
                 </tr>
             </thead>
             <tbody>
-               
-                    @foreach($users as $user)
+                @foreach($users as $user)
                     <tr>
                         <td>{{ $user->first_name }}</td>
                         <td>{{ $user->last_name }}</td>
                         <td>{{ $user->is_admin == 1 ? 'מנהל': 'manager'}}</td>
                         <td>{{ $user->is_admin }}</td>
-                        <td><a href="#" class="btn btn-default">עריכה</a></td>
-                        <td><a href="#" class="btn btn-danger">מחק משתמש</a></td>
+                        <td><a href="{{ route('users.edit',$user->id) }}" class="btn btn-link">עריכה</a></td>
+                        <td><a href="{{ route('users.destroy',$user->id) }}" class="btn btn-danger btn-xs pull-left">מחק משתמש</a></td>
                     </tr>
-                    @endforeach
-               
+                @endforeach
             </tbody>
         </table>
     @endif

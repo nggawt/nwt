@@ -14,5 +14,6 @@ class DatabaseSeeder extends Seeder
         $this->call(generate_users::class);
         $this->call(generete_article_table::class);
         $this->call(genarete_pivot_table::class);
+        $this->call(genarete_pages_table::class);
     }
 }

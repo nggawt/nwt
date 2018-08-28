@@ -12,26 +12,33 @@ class generate_users extends Seeder
      */
     public function run()
     {
-        $users = App\User::create([
+        $users = User::create([
             'first_name' => 'ngga', 
             'last_name' => 'WT', 
             'email' => 'ngga@gmail.com', 
             'password' => bcrypt("qweqwe"), 
-            'is_admin' => 0
+            'permission' => 'admin'
         ]);
-        $users = App\User::create([
+        $users = User::create([
             'first_name' => 'נגה', 
             'last_name' => 'WTI', 
             'email' => 'buzzi@gmail.com', 
             'password' => bcrypt("qweqwe"), 
-            'is_admin' => 0
+            'permission' => 'custom'
         ]);
-        $users = App\User::create([
+        $users = User::create([
             'first_name' => 'buzzi', 
             'last_name' => 'WTI', 
             'email' => 'ngga@example.com', 
             'password' => bcrypt("qweqwe"), 
-            'is_admin' => 0
+            'permission' => 'root'
+        ]);
+        $users = User::create([
+            'first_name' => 'dan',
+            'last_name' => 'dani',
+            'email' => 'dan@gmile.com',
+            'password' => bcrypt("qweqwe"), 
+            'permission' => 'author'
         ]);
         
 

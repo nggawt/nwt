@@ -26,9 +26,9 @@ class Article extends Model
         return $this->tags->lists('id');
     }
     
-    public function setPublishedAtAttribute($date){
+   /* public function setPublishedAtAttribute($date){
         $this->attributes['published_at'] = Carbon::now();
-    }
+    }*/
     
 //    public function setCreatedAtAttribute($date){
 //        $this->attributes['created_at'] = Carbon::createFromFormat('Y-m-d', $date)->addHour(3);

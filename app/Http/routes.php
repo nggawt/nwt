@@ -1,50 +1,32 @@
 <?php
-
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
-|
-*/
-
-//Route::get('/userlist',[
-//    'uses' => 'users_controller@index',
-//    'as' => 'user.index'
-//]);
-//
-//Route::post('/regist',[
-//    'uses' => 'users_controller@store',
-//    'as' => 'user.store'
-//]);
-//
 Route::get('/test',[
     'uses'  => 'Dashboard@test',
     'as'    => 'test'
 ]);
 
 Route::post('/login',[
-    'uses' => 'users_controller@getLogin',
+    'uses' => 'usersController@getLogin',
     'as' => 'users.logIn'
 ]);
 //
 Route::get('/logout',[
-    'uses' => 'Users_controller@getLogout',
+    'uses' => 'UsersController@getLogout',
     'as' => 'logout'
 ]);
 //
 Route::get('/article{article}/getAllPost',[
-    'uses'  => 'Articles_controller@getAllPost',
+    'uses'  => 'ArticlesController@getAllPost',
     'as'    => 'getAllPost'
 ]);
 
 
 Route::get('/',function(){
-    return view('welcome');
-})->name('home');
+    return view('wellcome');
+})->name('wellcome');
+
+Route::get('/canvas',function(){
+    return view('test');
+})->name('canvas');
 
 Route::get('/admin',[
     'uses'  => 'Dashboard@index',
@@ -55,19 +37,31 @@ Route::get('/web',function(){
     return view('pages.web');
 })->name('web');
 
-Route::get('/Portfolio',function(){
-    return view('pages.Portfolio');
-})->name('Portfolio');
+Route::get('/portfolio',function(){
+    return view('pages.portfolio');
+})->name('portfolio');
 
 Route::get('/about',function(){
     return view('pages.about');
 })->name('about');
 
-Route::get('/concat',function(){
-    return view('pages.concat');
-})->name('concat');
-Route::resource('users','Users_controller');
-Route::resource('article','Articles_controller');
+Route::get('/contact',function(){
+    return view('pages.contact');
+})->name('contact');
+
+// Route::get('/pages/page-editor',function($id){
+//     return view('dashboard.page-editor',$id);
+// })->name('page.editor');
+
+Route::get('/pages/{pages}/page-editor',[
+    'uses' => 'PagesController@pageEditor',
+    'as' => 'page.editor'
+]);
+
+Route::resource('users','UsersController');
+Route::resource('article','ArticlesController');
+Route::resource('pages','PagesController');
+
 
 //Route::group(['middleware' => ['web']], function(){
 //    

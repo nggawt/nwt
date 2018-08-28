@@ -3,7 +3,11 @@
 @section('styles')
 <style>
     div.costum table{
+        margin-top: 1em;
+    }
+    div.costum table thead,tbody{
         background:rgba(220,220,220,1);
+        margin-top: 1em;
     }
     table, th, td {
      border: 1px solid black;
@@ -22,16 +26,13 @@
 
 <div class="col-sm-8 col-sm-offset-2 costum">
     @if(isset($users))
-        <table style="width:100%" class="table table-hover">
+        <table style="width:100%" class="table-hover">
             <thead>
                 <tr>
                     <th>שם</th>
                     <th>שם משפחה</th>
                     <th>תפקיד</th>
                     <th>הרשאות</th>
-                    <th>ערוך</th>
-                    <th>מחק</th>
-
                 </tr>
             </thead>
             <tbody>

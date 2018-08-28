@@ -2,7 +2,7 @@
     <div class="container foot-nav">
         <div class="inner_footer row">
             <div class="col-sm-2 icon-loogo">
-                <a href="{{ route('home') }}"><img class="img img-rounded" src="{{ asset('images/orangeLoggo150.png') }}" alt="loogo" /></a>
+                <a href="{{ route('wellcome') }}"><img class="img img-rounded" src="{{ asset('images/orangeLoggo150.png') }}" alt="loogo" /></a>
             </div>
             <div class="footer-navigetion col-sm-2">
                 <h4>דף ניווט</h4>

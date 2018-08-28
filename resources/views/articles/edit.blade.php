@@ -22,7 +22,7 @@
         </div>
         <div class="form-group">
             {!! Form::label('tag_list', 'תגיות:',['class' => 'control-label']) !!}
-            {!! Form::select('tag_ist[]',$tags ,null,['multiple' => true,'class' => 'form-control']) !!}
+            {!! Form::select('tag_list[]',$tags ,null,['multiple' => true,'class' => 'form-control']) !!}
         </div>
         
         <div class="form-group">
